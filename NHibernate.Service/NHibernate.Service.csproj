@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NHibernate.Entity\NHibernate.Entity.csproj" />
+    <ProjectReference Include="..\NHibernate.Repository\NHibernate.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
