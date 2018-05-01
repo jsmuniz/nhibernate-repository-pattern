@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using NHibernate.Data.Persistence.DataContext;
+using NHibernate.Data.Persistence.SessionFactory;
 using NHibernate.Entity.Models;
 using NHibernate.Service.Services;
 
@@ -14,7 +14,7 @@ namespace NHibernate.Api.Controllers
 
         public ProductsController()
         {
-            var context = new DataContext();
+            var context = new SessionFactory();
             _productService = new ProductService(context);
         }
 

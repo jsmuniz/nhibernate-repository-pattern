@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
-using NHibernate.Data.Persistence.DataContext;
+using NHibernate.Data.Persistence.SessionFactory;
 using NHibernate.Entity.Models;
 using NHibernate.Repository;
 
@@ -13,7 +13,7 @@ namespace NHibernate.Service.Services
     {
         private readonly UnitOfWork _unitOfWork;
 
-        public ProductService(DataContext session)
+        public ProductService(SessionFactory session)
         {
             _unitOfWork = new UnitOfWork(session);
         }

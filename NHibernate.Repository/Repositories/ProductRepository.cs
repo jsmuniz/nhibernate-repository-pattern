@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using NHibernate.Data.Persistence.DataContext;
 using NHibernate.Entity.Models;
 
 namespace NHibernate.Repository.Repositories

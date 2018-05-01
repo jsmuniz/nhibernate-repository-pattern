@@ -1,4 +1,4 @@
-﻿using NHibernate.Data.Persistence.DataContext;
+﻿using NHibernate.Data.Persistence.SessionFactory;
 using NHibernate.Repository.Repositories;
 
 namespace NHibernate.Repository
@@ -8,7 +8,7 @@ namespace NHibernate.Repository
         private ISession _session;
         private ITransaction _transaction;
 
-        public UnitOfWork(DataContext session)
+        public UnitOfWork(SessionFactory session)
         {
             _session = session.OpenSession();
             Products = new ProductRepository(_session);
